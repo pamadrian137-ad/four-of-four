@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101014">
+  <title>FOUR OF FOUR — Our Archive</title>
+  <meta name="description" content="Four childhood friends. Four personalities. One brotherhood. A lifetime of memories.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- PASSWORD SCREEN -->
+  <section class="lock-screen" id="lockScreen">
+    <div class="lock-card">
+      <div class="lock-symbol"><span>4</span></div>
+      <p class="eyebrow">PRIVATE FRIENDSHIP ARCHIVE</p>
+      <h1>FOUR OF <span>FOUR.</span></h1>
+      <p class="lock-description">Four different lives. One unforgettable story.</p>
+
+      <form id="passwordForm">
+        <label for="passwordInput">ENTER THE ACCESS CODE</label>
+        <div class="password-field">
+          <input id="passwordInput" type="password" placeholder="Enter passcode" autocomplete="off" required>
+          <button class="password-submit" type="submit" aria-label="Unlock archive">↗</button>
+        </div>
+        <p class="password-error" id="passwordError" aria-live="polite"></p>
+      </form>
+
+      <p class="lock-footer">MADE OF MEMORIES · KEPT BETWEEN US</p>
+    </div>
+  </section>
+
+  <!-- WEBSITE -->
+  <div id="siteContent" class="site-content" hidden>
+    <header class="site-header">
+      <a href="#homePage" class="brand" id="brandHome" aria-label="Four of Four home">
+        <span class="brand-mark">4/4</span>
+        <span>FOUR OF FOUR<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#homePage" id="homeNav" class="nav-link active">Home</a>
+        <a href="#friendsSection" id="friendsNav" class="nav-link">The Four</a>
+        <a href="#memoriesSection" id="memoriesNav" class="nav-link">Memories</a>
+      </nav>
+
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+        <span id="themeIcon">☼</span>
+        <span id="themeToggleText">Light mode</span>
+      </button>
+    </header>
+
+    <main id="homePage">
+      <!-- HERO -->
+      <section class="hero-section" data-hero>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> EST. IN FRIENDSHIP · BUILT TO LAST</p>
+
+          <h1>Different paths.<br><span>One brotherhood.</span></h1>
+
+          <p class="hero-description">
+            From childhood football matches to the madness of growing up,
+            four personalities, countless stories, and memories that will
+            always feel like home. This is our little corner of the internet.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#friendsSection">Meet the four <span>↗</span></a>
+            <a class="button button-secondary" href="#memoriesSection">Explore memories</a>
+          </div>
+
+          <div class="hero-stats">
+            <div><strong>04</strong><span>FRIENDS</span></div>
+            <div><strong>01</strong><span>BROTHERHOOD</span></div>
+            <div><strong>∞</strong><span>MEMORIES</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img id="heroImage" src="assets/images/hero/team-photo.jpg" alt="The four friends together">
+
+            <div class="hero-image-shade"></div>
+
+            <div class="hero-image-label">
+              <span class="image-label-dot"></span>
+              <span>THE ORIGINAL FOUR</span>
+              <span>— 001</span>
+            </div>
+          </div>
+
+          <div class="hero-side-note">FRIENDSHIP IS THE STORY.</div>
+          <div class="hero-floating-tag">Always four. Always us.</div>
+        </div>
+      </section>
+
+      <!-- THE FOUR FRIENDS -->
+      <section class="friends-section section-wrap" id="friendsSection">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE PEOPLE BEHIND THE STORY</p>
+            <h2>Meet the <span>four.</span></h2>
+          </div>
+
+          <p class="section-note">
+            Different characters. Same team.<br>
+            Tap a card to open their archive.
+          </p>
+        </div>
+
+        <div class="friends-grid">
+
+          <!-- ADRIAN -->
+          <button class="friend-card" type="button" data-open-profile="adrian">
+            <span class="friend-image-wrap">
+              <img src="assets/images/adrian/adrian-1.jpg" alt="Adrian" loading="lazy">
+              <span class="friend-number">01 / 04</span>
+              <span class="friend-card-arrow">↗</span>
+            </span>
+
+            <span class="friend-card-info">
+              <span class="friend-role">THE GOALKEEPER</span>
+              <span class="friend-name">Adrian</span>
+              <span class="friend-teaser">
+                47 ideas before breakfast. And somehow, food is still on the agenda. 😂
+              </span>
+              <span class="friend-cta">Open profile <span>→</span></span>
+            </span>
+          </button>
+
+          <!-- KARANJA -->
+          <button class="friend-card" type="button" data-open-profile="karanja">
+            <span class="friend-image-wrap">
+              <img src="assets/images/karanja/karanja-1.jpg" alt="Karanja" loading="lazy">
+              <span class="friend-number">02 / 04</span>
+              <span class="friend-card-arrow">↗</span>
+            </span>
+
+            <span class="friend-card-info">
+              <span class="friend-role">MALIK · THE FORMER CAPTAIN</span>
+              <span class="friend-name">Karanja</span>
+              <span class="friend-teaser">
+                Former captain, full-time loverboy, part-time footballer. Priorities, bana. 💀
+              </span>
+              <span class="friend-cta">Open profile <span>→</span></span>
+            </span>
+          </button>
+
+          <!-- ANENE -->
+          <button class="friend-card" type="button" data-open-profile="anene">
+            <span class="friend-image-wrap">
+              <img src="assets/images/anene/anene-1.jpg" alt="Anene" loading="lazy">
+              <span class="friend-number">03 / 04</span>
+              <span class="friend-card-arrow">↗</span>
+            </span>
+
+            <span class="friend-card-info">
+              <span class="friend-role">MANUH · THE DEFENDER</span>
+              <span class="friend-name">Anene</span>
+              <span class="friend-teaser">
+                Defender on the pitch, comedian off it. eFootball? Suddenly busy. 😂
+              </span>
+              <span class="friend-cta">Open profile <span>→</span></span>
+            </span>
+          </button>
+
+          <!-- MWANIKII -->
+          <button class="friend-card" type="button" data-open-profile="mwaniki">
+            <span class="friend-image-wrap">
+              <img src="assets/images/mwanikii/mwanikii-1.jpg" alt="Mwanikii" loading="lazy">
+              <span class="friend-number">04 / 04</span>
+              <span class="friend-card-arrow">↗</span>
+            </span>
+
+            <span class="friend-card-info">
+              <span class="friend-role">SPARTA · THE SECRETIVE ONE</span>
+              <span class="friend-name">Mwanikii</span>
+              <span class="friend-teaser">
+                Secretive by nature, food lover by choice. The archive knows things. 🤫
+              </span>
+              <span class="friend-cta">Open profile <span>→</span></span>
+            </span>
+          </button>
+
+        </div>
+      </section>
+
+      <!-- MEMORIES -->
+      <section class="memories-section section-wrap" id="memoriesSection">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MOMENTS THAT STAY WITH US</p>
+            <h2>Our memory <span>lane.</span></h2>
+          </div>
+
+          <p class="section-note">
+            Some moments deserve more than a place in the camera roll.
+          </p>
+        </div>
+
+        <div class="memories-grid" id="memoriesGrid">
+          <button class="memory-card" type="button" data-memory-index="0">
+            <img src="assets/images/group/memory-1.jpg" alt="A memory with the four friends" loading="lazy">
+
+            <span class="memory-overlay">
+              <span>MEMORY NO. 01</span>
+              <strong>The good old days</strong>
+              <span class="memory-open">↗</span>
+            </span>
+          </button>
+
+          <button class="memory-card" type="button" data-memory-index="1">
+            <img src="assets/images/group/memory-2.jpg" alt="Another memory with the four friends" loading="lazy">
+
+            <span class="memory-overlay">
+              <span>MEMORY NO. 02</span>
+              <strong>Just us being us</strong>
+              <span class="memory-open">↗</span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- CLOSING -->
+      <section class="closing-section">
+        <p class="eyebrow">FOUR PEOPLE. ONE STORY.</p>
+        <h2>Not just friends.<br><span>That's family.</span></h2>
+        <p>Wherever life takes us, this chapter will always be ours.</p>
+        <a href="#friendsSection" class="button button-primary">Back to the four <span>↑</span></a>
+      </section>
+    </main>
+
+    <!-- PROFILE VIEW -->
+    <section id="profilePage" class="profile-page" hidden>
+      <div class="profile-topbar">
+        <button id="backHome" class="back-button" type="button">← Back to the archive</button>
+        <span class="eyebrow">PERSONAL ARCHIVE / <span id="profileNumber">01</span></span>
+      </div>
+
+      <div id="profileContent" class="profile-content"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <a href="#homePage" id="footerHome" class="footer-brand">FOUR OF FOUR<span>.</span></a>
+      <p>Built with friendship. Preserved with love.</p>
+      <span>© <span id="currentYear"></span> · OUR ARCHIVE</span>
+    </footer>
+  </div>
+
+  <!-- MUSIC PLAYER -->
+  <div id="musicPlayer" class="music-player" hidden>
+    <div class="music-disc"><span>♫</span></div>
+
+    <div class="music-meta">
+      <span class="music-overline">NOW PLAYING</span>
+      <strong id="musicTitle">Our soundtrack</strong>
+      <span id="musicLabel">FOUR OF FOUR</span>
+    </div>
+
+    <button id="playPauseButton" class="music-control" type="button" aria-label="Play or pause music">▶</button>
+    <button id="musicToggle" class="music-expand" type="button" aria-label="Toggle music options">⌄</button>
+
+    <div class="music-options" id="musicOptions" hidden>
+      <button type="button" data-song="main">Our song</button>
+      <button type="button" data-song="adrian">Adrian</button>
+      <button type="button" data-song="karanja">Karanja</button>
+      <button type="button" data-song="anene">Anene</button>
+      <button type="button" data-song="mwaniki">Mwanikii</button>
+    </div>
+  </div>
+
+  <audio id="backgroundMusic" preload="auto"></audio>
+
+  <!-- PHOTO LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo viewer">×</button>
+
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous photo">‹</button>
+
+    <figure class="lightbox-figure">
+      <img id="lightboxImage" src="" alt="">
+
+      <figcaption>
+        <span id="lightboxCaption"></span>
+        <span id="lightboxCount"></span>
+      </figcaption>
+    </figure>
+
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Next photo">›</button>
+  </div>
+</body>
+</html>
